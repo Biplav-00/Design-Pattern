@@ -1,0 +1,4 @@
+You are developing an e-commerce website that displays product prices and allows users to receive notifications 
+when the price of a particular product drops. Implement a system that uses the Observer Design Pattern to allow users to 
+subscribe to products and receive notifications when the price drops below a certain threshold.
+

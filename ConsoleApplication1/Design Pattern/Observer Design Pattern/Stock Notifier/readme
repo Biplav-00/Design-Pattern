@@ -1,0 +1,10 @@
+Suppose you are developing a stock trading application. You want to implement a feature that 
+allows users to receive notifications when the price of a particular stock changes.
+ Using the Observer design pattern, how would you implement this feature?
+ 
+ solution=
+ 
+ first we have to define the subject and observer interface
+ 
+ 
+ 

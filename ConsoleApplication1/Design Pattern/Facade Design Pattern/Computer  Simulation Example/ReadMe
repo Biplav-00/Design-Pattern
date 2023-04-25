@@ -1,0 +1,4 @@
+Let's say we have a computer system with multiple subsystems responsible for different tasks such 
+as reading input from the keyboard, processing data, and displaying output on the screen. The client wants to
+ perform a complex task, such as running a simulation, but doesn't want to deal with the complexity of the system.
+ We can use the Facade pattern to provide a simple interface to the system:

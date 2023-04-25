@@ -1,0 +1,12 @@
+Suppose you are designing a music player application. The music player has multiple subsystems, 
+such as the audio player, the playlist manager, and the user interface. You want to use the Facade pattern to 
+simplify the interaction between the client and the subsystems.
+
+Design a Facade class for the music player application that provides a simple interface for 
+the client to perform the following tasks:
+
+Play a song
+Pause a song
+Add a song to the playlist
+Remove a song from the playlist
+Display the current playlist

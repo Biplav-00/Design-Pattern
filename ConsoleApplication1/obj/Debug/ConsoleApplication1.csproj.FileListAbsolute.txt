@@ -1,0 +1,7 @@
+F:\Biplav\Dot Net Solution\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+F:\Biplav\Dot Net Solution\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+F:\Biplav\Dot Net Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+F:\Biplav\Dot Net Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.SuggestedBindingRedirects.cache
+F:\Biplav\Dot Net Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+F:\Biplav\Dot Net Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+F:\Biplav\Dot Net Solution\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
