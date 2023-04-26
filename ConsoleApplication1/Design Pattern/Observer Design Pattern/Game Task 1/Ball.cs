@@ -12,6 +12,7 @@ namespace ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Game_Task_1
         private int ballIndex;
         private List<Observer> obseverList = new List<Observer>();
         
+        //this is the constructor and the it initializes the generate ball method when the object of ball is called or created
         public Ball()
         {
             generateRandom();
