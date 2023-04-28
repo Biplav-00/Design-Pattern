@@ -1,0 +1,4 @@
+suppose that There is one interface shape and it has one abstract method 
+called drawShape() and shape interface is implemented by three class rectangle,traingle,square 
+
+create this above problem's solution using the factory design patten.

@@ -4,6 +4,7 @@ using ConsoleApplication1.Design_Pattern.Decorator_Design_Pattern.Truenary_Solut
 using ConsoleApplication1.Design_Pattern.Decorator_Design_Pattern.Vehicle_Example;
 using ConsoleApplication1.Design_Pattern.Facade_Design_Pattern.Computer__Simulation_Example;
 using ConsoleApplication1.Design_Pattern.Facade_Design_Pattern.Music_App;
+using ConsoleApplication1.Design_Pattern.Factory_Design_Pattern.Example_1;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.chat_application;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Ecommerce_Example;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Game_Task_1;
@@ -136,12 +137,28 @@ namespace ConsoleApplication1
             client.runSimulation();*/
             
             //this code is for the design pattern-> facade design pattern -> music app
-            MusicFacade musicFacade = new MusicFacade();
+            /*MusicFacade musicFacade = new MusicFacade();
             //musicFacade.displayAllSong();
             musicFacade.addSong("Timi nai ta hau sathi");
             musicFacade.playSong("timi nai ta hau sathy");
             musicFacade.paushSong("timi nai ta hau sathy");
-            musicFacade.displayAllSong();
+            musicFacade.displayAllSong();*/
+            
+            //this code is for the Factory Design Pattern Example1
+
+            ShapeFactory allShapeFactory = new ShapeFactory();
+            Shape rectangleShape = new Rectangle();
+            Shape traingleShape = new Traingle();
+            Shape squareShape = new Square();
+            traingleShape=allShapeFactory.performTask("traingle");
+            Console.WriteLine(traingleShape.drawShape());
+            rectangleShape = allShapeFactory.performTask("rectangle");
+            Console.WriteLine(rectangleShape.drawShape());
+            squareShape = allShapeFactory.performTask("square");
+            Console.WriteLine(squareShape.drawShape());
+
+
+
 
         }
     }
