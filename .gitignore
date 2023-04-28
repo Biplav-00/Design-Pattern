@@ -3,3 +3,4 @@
 *.csprog
 Properties/
 bin/
+obj/
