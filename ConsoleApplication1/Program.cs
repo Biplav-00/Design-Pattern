@@ -5,6 +5,7 @@ using ConsoleApplication1.Design_Pattern.Decorator_Design_Pattern.Vehicle_Exampl
 using ConsoleApplication1.Design_Pattern.Facade_Design_Pattern.Computer__Simulation_Example;
 using ConsoleApplication1.Design_Pattern.Facade_Design_Pattern.Music_App;
 using ConsoleApplication1.Design_Pattern.Factory_Design_Pattern.Example_1;
+using ConsoleApplication1.Design_Pattern.Factory_Design_Pattern.Vehicle_Example;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.chat_application;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Ecommerce_Example;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Game_Task_1;
@@ -146,7 +147,7 @@ namespace ConsoleApplication1
             
             //this code is for the Factory Design Pattern Example1
 
-            ShapeFactory allShapeFactory = new ShapeFactory();
+            /*ShapeFactory allShapeFactory = new ShapeFactory();
             Shape rectangleShape = new Rectangle();
             Shape traingleShape = new Traingle();
             Shape squareShape = new Square();
@@ -155,9 +156,21 @@ namespace ConsoleApplication1
             rectangleShape = allShapeFactory.performTask("rectangle");
             Console.WriteLine(rectangleShape.drawShape());
             squareShape = allShapeFactory.performTask("square");
-            Console.WriteLine(squareShape.drawShape());
+            Console.WriteLine(squareShape.drawShape());*/
             
            
+            
+            //this code is for the Factory Design Patten Vehicle Example
+
+            VehicleFactory vehicleFactory = new VehicleFactory();
+            Vehicle car = new Car();
+            car.build("Honda Car",1500.00);
+           vehicleFactory.sale("car");
+           
+         
+         
+            
+            
 
 
 
