@@ -1,6 +1,6 @@
 .idea/
 *.sln
-*.csprog
+*.csproj
 Properties/
 bin/
 obj/
