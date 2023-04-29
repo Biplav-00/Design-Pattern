@@ -6,11 +6,13 @@ using ConsoleApplication1.Design_Pattern.Facade_Design_Pattern.Computer__Simulat
 using ConsoleApplication1.Design_Pattern.Facade_Design_Pattern.Music_App;
 using ConsoleApplication1.Design_Pattern.Factory_Design_Pattern.Example_1;
 using ConsoleApplication1.Design_Pattern.Factory_Design_Pattern.Vehicle_Example;
+using ConsoleApplication1.Design_Pattern.Factory_Design_Pattern.Vehicle_Example_2;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.chat_application;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Ecommerce_Example;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Game_Task_1;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Stock_Notifier;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Youtube_Example;
+using IVehicle = ConsoleApplication1.Design_Pattern.Factory_Design_Pattern.Vehicle_Example_2.IVehicle;
 
 namespace ConsoleApplication1
 {
@@ -162,15 +164,27 @@ namespace ConsoleApplication1
             
             //this code is for the Factory Design Patten Vehicle Example
 
-            VehicleFactory vehicleFactory = new VehicleFactory();
+            /*VehicleFactory vehicleFactory = new VehicleFactory();
             Vehicle car = new Car();
             car.build("Honda Car",1500.00);
-           vehicleFactory.sale("car");
-           
-         
-         
+            vehicleFactory.sale("car");*/
             
             
+            //this code is for Design Pattern -> Factory Design Pattern -> vehicle Example 2
+            VehicleFactory1 vehicleFactory1 = new VehicleFactory1();
+            //IVehicle motrocycle = new MotorCycle();
+           IVehicle motrocycle =vehicleFactory1.createVehicle("motorcycle");
+            motrocycle.startEngine();
+            motrocycle.stopEngine();
+
+            IVehicle truck = vehicleFactory1.createVehicle("truck");
+            truck.startEngine();
+            truck.stopEngine();
+
+
+
+
+
 
 
 

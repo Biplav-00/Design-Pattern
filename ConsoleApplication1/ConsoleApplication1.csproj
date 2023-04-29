@@ -68,6 +68,10 @@
         <Compile Include="Design Pattern\Factory Design Pattern\Example 1\ShapeFactory.cs" />
         <Compile Include="Design Pattern\Factory Design Pattern\Example 1\Square.cs" />
         <Compile Include="Design Pattern\Factory Design Pattern\Example 1\Traingle.cs" />
+        <Compile Include="Design Pattern\Factory Design Pattern\Vehicle Example 2\IVehicle.cs" />
+        <Compile Include="Design Pattern\Factory Design Pattern\Vehicle Example 2\MotorCycle.cs" />
+        <Compile Include="Design Pattern\Factory Design Pattern\Vehicle Example 2\Truck.cs" />
+        <Compile Include="Design Pattern\Factory Design Pattern\Vehicle Example 2\VehicleFactory1.cs" />
         <Compile Include="Design Pattern\Factory Design Pattern\Vehicle Example\Car.cs" />
         <Compile Include="Design Pattern\Factory Design Pattern\Vehicle Example\Vehicle.cs" />
         <Compile Include="Design Pattern\Factory Design Pattern\Vehicle Example\VehicleFactory.cs" />
