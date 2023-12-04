@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleApplication1.Design_Pattern.Abstract_Factory_Design_Pattern.Game_Vehicle;
 using ConsoleApplication1.Design_Pattern.Decorator_Design_Pattern.Demo_Program;
 using ConsoleApplication1.Design_Pattern.Decorator_Design_Pattern.Truenary_Solution_Problem;
 using ConsoleApplication1.Design_Pattern.Decorator_Design_Pattern.Vehicle_Example;
@@ -12,7 +13,9 @@ using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Ecommerce_Examp
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Game_Task_1;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Stock_Notifier;
 using ConsoleApplication1.Design_Pattern.Observer_Design_Pattern.Youtube_Example;
+using ConsoleApplication1.Design_Pattern.SOLID_Design.Single_Responsibility_Principle;
 using IVehicle = ConsoleApplication1.Design_Pattern.Factory_Design_Pattern.Vehicle_Example_2.IVehicle;
+using VehicleFactory = ConsoleApplication1.Design_Pattern.Abstract_Factory_Design_Pattern.Game_Vehicle.VehicleFactory;
 
 namespace ConsoleApplication1
 {
@@ -171,16 +174,55 @@ namespace ConsoleApplication1
             
             
             //this code is for Design Pattern -> Factory Design Pattern -> vehicle Example 2
-            VehicleFactory1 vehicleFactory1 = new VehicleFactory1();
-            //IVehicle motrocycle = new MotorCycle();
-           IVehicle motrocycle =vehicleFactory1.createVehicle("motorcycle");
+            /*VehicleFactory1 vehicleFactory1 = new VehicleFactory1();
+            IVehicle motrocycle =vehicleFactory1.createVehicle("motorcycle");
             motrocycle.startEngine();
             motrocycle.stopEngine();
 
             IVehicle truck = vehicleFactory1.createVehicle("truck");
             truck.startEngine();
-            truck.stopEngine();
+            truck.stopEngine();*/
+            
+            
+            //this code is for the design pattern -> abstract factory design patten -> Game Vehicle
 
+            /*VehicleFactory urbanVehicleFactory = new UrbanVehicleFactor();
+            IVehicle2 urbanCar=urbanVehicleFactory.createVehicle("car");
+            Console.WriteLine("The urban car ");
+            urbanCar.speed(120);
+            urbanCar.wheels();
+            urbanCar.comfort("Luxurious feel");
+
+            Console.WriteLine("The urban truck");
+            IVehicle2 urbanTruck = urbanVehicleFactory.createVehicle("truck");
+            urbanTruck.speed(75);
+            urbanTruck.wheels();
+            urbanTruck.comfort("not zigzag");
+
+            Console.WriteLine("The urban Bus");
+            IVehicle2 urbanBus = urbanVehicleFactory.createVehicle("bus");
+            urbanBus.speed(90);
+            urbanBus.wheels();
+            urbanBus.comfort("Best feeling ever");
+            */
+
+
+            //this code is for Solid Design -> Single Responsibility Principle
+            Employee employee = new Employee()
+            {
+                address = "Hetauda",
+                name = "animesh",
+                salary = 2400
+            };
+            EmployeeDatabase employeeDatabase = new EmployeeDatabase();
+            employeeDatabase.saveEmployee(employee);
+
+            SalaryCalculator salaryCalculator = new SalaryCalculator();
+            salaryCalculator.calculateSalary(employee);
+            Console.WriteLine($"salary of employee : {employee.name} is  {salaryCalculator.calculateSalary(employee)}");
+
+            GenerateReport generateReport = new GenerateReport();
+            generateReport.generateEmployeeReport(employee);
 
 
 
